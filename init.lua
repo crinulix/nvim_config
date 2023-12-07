@@ -6,7 +6,7 @@
 -- ripgrep: https://github.com/BurntSushi/ripgrep -> necessary for Telescope 
 -- win32yank for clipboard integration
 -- sharkdp/fd
-
+-- nodejs is needed too
 
 
 require("core.keymaps")
