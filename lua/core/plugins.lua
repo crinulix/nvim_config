@@ -15,6 +15,9 @@ vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
   "ellisonleao/gruvbox.nvim",
+  { "savq/melange-nvim" },
+  {"luisiacc/gruvbox-baby"},
+  "rebelot/kanagawa.nvim",
   -- Lua line
   'nvim-lualine/lualine.nvim',
   -- Git related plugins
@@ -143,24 +146,6 @@ require("lazy").setup({
     -- See `:help ibl`
     main = 'ibl',
     opts = {},
-  },
-  -- bufferline
-  {
-    "akinsho/bufferline.nvim",
-    version = "v3.*",
-    dependencies = "nvim-tree/nvim-web-devicons",
-    event = "VeryLazy",
-    keys = {
-      { "<leader>bp", "<cmd>BufferLineTogglePin<CR>",            desc = "Toggle Buffer Pin" },
-      { "<leader>bP", "<cmd>BufferLineGroupClose ungrouped<CR>", desc = "Close Unpinned Buffers" },
-    },
-    opts = {
-      options = {
-        diagnostics = "nvim_lsp",
-        numbers = "buffer_id",
-        always_show_bufferline = false
-      }
-    }
   },
   -- auto pairing
   { "echasnovski/mini.pairs", event="VeryLazy",
